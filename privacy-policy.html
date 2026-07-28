@@ -16,15 +16,16 @@
 <body>
 
 <h1>Privacy Policy — Volara Log</h1>
-<p class="updated">Last updated: July 12, 2026</p>
+<p class="updated">Last updated: July 28, 2026</p>
 
 <p>Volara Log ("the App", "we", "us") is a personal flight logbook application for pilots, developed by Volara Lab. This Privacy Policy explains what data the App handles, how it is stored, and what control you have over it.</p>
 
 <h2>1. Data storage — your device is the source of truth</h2>
-<p>All flight, duty, simulator, crew, and aircraft records you enter are stored locally on your device, in a private database that only the App can access. Volara Lab does not operate a server or database that stores your logbook data. We cannot see, access, or recover your records — if you lose your device without a backup, your data is gone.</p>
+<p>All flight, duty, simulator, crew, and aircraft records you enter — including licence and medical certificate records, and any photos or documents you attach to them — are stored locally on your device, in a private database that only the App can access. Volara Lab does not operate a server or database that stores this logbook data. We cannot see, access, or recover your records — if you lose your device without a backup, your data is gone. Document attachments (e.g. photos of licences or medical certificates) are additionally encrypted before being stored or backed up.</p>
+<p>The App may request access to your photo library (to attach a document photo) and permission to send local notifications (e.g. a reminder that a document is about to expire). Both are used entirely on your device and never transmit any data to us.</p>
 
 <h2>2. Sign-in (Google or Apple) — required to use the App</h2>
-<p>You must sign in with a Google or Apple account to use the App. This is used only to identify your account across devices — for example, so your free trial and subscription status survive a reinstall or a new device — it is not a Volara Lab account or server-side login system. Depending on which you choose:</p>
+<p>You must sign in with a Google or Apple account to use the App. Sign-in is handled through a lightweight account system that Volara Lab operates, built on <a href="https://supabase.com/privacy" target="_blank">Supabase</a>, our authentication provider — solely to identify your account across devices, for example so your free trial and subscription status survive a reinstall or a new device. This account system only ever holds your email address and an internal account identifier. It never receives, stores, or has access to your flight, duty, simulator, crew, aircraft, or document records — those stay on your device, and, if you choose, in your own Google Drive or iCloud account (see Sections 3 and 4). Depending on which you choose:</p>
 <ul>
   <li><strong>Sign in with Google</strong> requests only your basic profile (email and name).</li>
   <li><strong>Sign in with Apple</strong> requests only your email and name, and only shares your name/email with the App the first time you authorize it, per Apple's own design.</li>
@@ -34,9 +35,13 @@
 <h2>3. Optional Google Drive sync</h2>
 <p>If you choose to connect Google Drive, the App stores a copy of your data in a hidden, app-specific folder in <em>your own</em> Google Drive account (Google's "appDataFolder"). This folder is not visible in your regular Drive file listing and is only accessible to the App itself, using your Google account's own storage and permissions. Volara Lab has no access to this folder or its contents — the data is encrypted in transit and stored under Google's own security model, governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 <p>You can disconnect Google Drive at any time from Settings, and revoke the App's access entirely from your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions page</a>.</p>
-<p>Google Drive sync is currently the only cloud backup option — there is no iCloud/Apple equivalent yet. This applies equally on iOS and Android.</p>
+<p>On iOS, an equivalent iCloud sync option is also available — see Section 4.</p>
 
-<h2>4. Optional Calendar roster import (Google Calendar, or on iOS your device's Calendar)</h2>
+<h2>4. Optional iCloud sync (iOS only)</h2>
+<p>On iOS, you can instead (or in addition) choose to sync your data to <em>your own</em> private iCloud account, using Apple's CloudKit framework. As with Google Drive, this stores a copy of your data in a private container tied to your Apple ID, which only the App can read — Volara Lab has no access to this data, which is encrypted and governed by Apple's own iCloud security model and <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+<p>You can enable, disable, or delete your iCloud backup at any time from Settings. Google Drive and iCloud sync are independent — you may use either, both, or neither.</p>
+
+<h2>5. Optional Calendar roster import (Google Calendar, or on iOS your device's Calendar)</h2>
 <p>If you choose to connect a calendar to import your duty roster, the App requests read-only access to either:</p>
 <ul>
   <li><strong>Google Calendar</strong> (any platform) — independent from Google Drive and from Sign-in (separate login, separate permission), so you can use a different Google account for each if you wish; or</li>
@@ -44,37 +49,38 @@
 </ul>
 <p>Either way, the App reads calendar events only when you trigger an import — it does not continuously monitor your calendar, and no calendar data is stored anywhere other than the duty records you explicitly choose to import into your own local/synced logbook. On iOS, the App requests full Calendar access because Apple does not offer a read-only permission tier, even though the App never creates, edits, or deletes any calendar event.</p>
 
-<h2>5. What we do not do</h2>
+<h2>6. What we do not do</h2>
 <ul>
-  <li>We do not run analytics, trackers, or advertising SDKs in the App.</li>
-  <li>We do not sell or rent your data to any third party. The only data shared with a third party is your account email/identifier with RevenueCat, solely for subscription management — see Section 6.</li>
-  <li>We do not have a user account system, login, or server-side database of our own — Sign-in (Section 2) exists only to identify your subscription across devices.</li>
+  <li>We do not run analytics, trackers, or advertising SDKs in the App. Displaying maps (airport charts and routes) loads generic map tiles from <a href="https://openfreemap.org/" target="_blank">OpenFreeMap</a>, a third-party map-tile provider — these requests do not include any of your logbook data.</li>
+  <li>We do not sell or rent your data to any third party. The only data shared with third parties is your account email and internal account identifier: with Supabase, to operate the lightweight account system described in Section 2, and with RevenueCat, solely for subscription management — see Section 7.</li>
+  <li>Beyond your email and account identifier, Volara Lab never has access to your flight, duty, simulator, crew, aircraft, or document records — these remain on your device, or in your own Google Drive/iCloud account, at all times.</li>
 </ul>
 
-<h2>6. Payments and subscriptions</h2>
+<h2>7. Payments and subscriptions</h2>
 <p>The App offers a free trial followed by a paid subscription. Payment is processed entirely through the app store you installed the App from — Google Play Billing (Android) or the Apple App Store (iOS), as applicable. Volara Lab never receives or stores your payment card details — Google or Apple handles that transaction under their own privacy and security terms.</p>
 <p>To manage your subscription status across devices (so your Pro access is recognized whether you log in from a new phone or reinstall the App), we use <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a>, a subscription management service. Your account email or identifier (from whichever of Google or Apple Sign-in you used) is shared with RevenueCat solely for this purpose — to identify your subscription and keep it in sync — and is not used by RevenueCat or Volara Lab for advertising or any purpose beyond subscription management. RevenueCat processes this data under its own <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a>.</p>
 
-<h2>7. Data deletion</h2>
+<h2>8. Data deletion</h2>
 <p>You can delete your data at any time in one or more of these ways:</p>
 <ul>
   <li>Delete individual records inside the App.</li>
   <li>Use "Clear All Data" in Settings to wipe everything stored on your device.</li>
-  <li>Revoke Drive/Calendar access from your Google Account permissions page (removes the App's ability to read/write your Google data; the hidden appDataFolder copy is deleted by Google when access is revoked or the App is uninstalled), or from iOS Settings for the device Calendar/Sign in with Apple.</li>
+  <li>Revoke Drive/Calendar access from your Google Account permissions page (removes the App's ability to read/write your Google data; the hidden appDataFolder copy is deleted by Google when access is revoked or the App is uninstalled), or from iOS Settings for the device Calendar/Sign in with Apple, or delete your iCloud backup from Settings within the App.</li>
+  <li>Use "Delete My Account" in Settings to permanently delete your account record — your email and account identifier — from our Supabase-based account system. This does not delete data stored in your own Google Drive or iCloud account; use the options above for that.</li>
   <li>Use "Log Out" in the App to disconnect your Sign-in identity, Drive, and Calendar at once.</li>
   <li>Uninstall the App, which removes all locally stored data from your device.</li>
 </ul>
 
-<h2>8. Children's privacy</h2>
+<h2>9. Children's privacy</h2>
 <p>Volara Log is intended for licensed and student pilots and is not directed at children. We do not knowingly collect data from children under 13 (or the relevant minimum age in your jurisdiction).</p>
 
-<h2>9. Security</h2>
-<p>We rely on your device's own operating system security and your Google/Apple account security (for Sign-in, Drive, and Calendar) to protect your data. No method of storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
+<h2>10. Security</h2>
+<p>We rely on your device's own operating system security and your Google/Apple account security (for Sign-in, Drive, and Calendar) to protect your data. The App also offers an optional biometric app-lock (Face ID or fingerprint, depending on your device) as an extra layer of protection, and encrypts document attachments before they are stored locally or backed up. No method of storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
 
-<h2>10. Changes to this policy</h2>
+<h2>11. Changes to this policy</h2>
 <p>We may update this policy as the App evolves. Material changes will be reflected by updating the "Last updated" date above. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
 
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <p>Questions about this policy or your data can be sent to <a href="mailto:volaralab@gmail.com">volaralab@gmail.com</a>.</p>
 
 </body>

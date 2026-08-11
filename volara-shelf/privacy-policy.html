@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Volara Shelf</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 18px; margin-top: 36px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  p, li { font-size: 15px; color: #333; }
+  .updated { color: #777; font-size: 13px; margin-bottom: 30px; }
+  a { color: #0077b6; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Volara Shelf</h1>
+<p class="updated">Last updated: August 11, 2026</p>
+
+<p>Volara Shelf ("the App", "we", "us") is a personal ebook library manager, developed by Volara Lab. This Privacy Policy explains what data the App handles, how it is stored, and what control you have over it.</p>
+
+<h2>1. Data storage — your device is the source of truth</h2>
+<p>The metadata for every book in your library (title, author, cover, synopsis, reading progress, shelves, and similar details) is stored locally on your device, in a private database that only the App can access. Volara Lab does not operate a server or database that stores this metadata for your personal library — we cannot see, access, or recover it if you lose your device without a backup.</p>
+<p>The ebook files themselves (EPUB, PDF, TXT, FB2, CBZ, etc.) are stored locally on your device by default. If you connect Google Drive or iCloud (Section 3), the App may keep the file only in your own cloud storage and download it back to your device on demand when you open it — this is designed to save space on your device, not to give Volara Lab access to your files.</p>
+
+<h2>2. Sign-in (Google) — required to use the App</h2>
+<p>You must sign in with a Google account to use the App. Sign-in is handled through a lightweight account system that Volara Lab operates, built on <a href="https://supabase.com/privacy" target="_blank">Supabase</a>, our authentication provider — solely to identify your account, for example to support the Shared Shelves feature described in Section 4. This account system only ever holds your email address, name, and an internal account identifier. It never receives, stores, or has access to your library metadata or ebook files — those stay on your device, and, if you choose, in your own Google Drive or iCloud account (see Section 3).</p>
+<p>This sign-in uses a separate Google OAuth connection from the optional Google Drive backup in Section 3 — you can use a different Google account for each if you wish.</p>
+
+<h2>3. Optional Google Drive or iCloud backup</h2>
+<p>If you choose to connect Google Drive, the App stores your library (metadata and ebook files) in a hidden, app-specific folder in <em>your own</em> Google Drive account (Google's "appDataFolder"). This folder is not visible in your regular Drive file listing and is only accessible to the App itself, using your Google account's own storage and permissions. Volara Lab has no access to this folder or its contents — the data is encrypted in transit and stored under Google's own security model, governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can disconnect Google Drive at any time from Settings, and revoke the App's access entirely from your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions page</a>.</p>
+<p>On iOS, an equivalent iCloud backup option is available instead, using Apple's CloudKit framework and your own private iCloud account — Volara Lab has no access to this data either, which is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>. Google Drive and iCloud are independent — you may use either, or neither.</p>
+
+<h2>4. Optional Shared Shelves — metadata only, never your files</h2>
+<p>You can optionally share a "shelf" (a collection of books) with another Volara Shelf user, or make it publicly discoverable to other users of the App. Sharing a shelf only ever syncs <strong>metadata</strong> — title, author, cover image, synopsis, ISBN, and similar fields — to our shared database (also hosted on Supabase). <strong>The ebook file itself is never uploaded, copied, or made accessible to anyone else through this feature</strong> — there is no download or read action available on a shared shelf for anyone but you. If you make a shelf public, its metadata (and your display name, as the owner) becomes visible to any signed-in user of the App browsing shared shelves; private shelves are visible only to people you've specifically invited.</p>
+
+<h2>5. Book metadata and cover lookup</h2>
+<p>When you search for cover art or metadata for a book (by title, author, or ISBN), the App sends that search text to third-party book databases — Google Books, the iTunes Search API, and OpenLibrary — to find a match. These requests contain only the search text you're looking up, not your account identity or library.</p>
+
+<h2>6. What we do not do</h2>
+<ul>
+  <li>We do not run analytics, trackers, or advertising SDKs in the App.</li>
+  <li>We do not sell or rent your data to any third party.</li>
+  <li>Beyond your email, name, and account identifier, Volara Lab never has access to your library metadata or ebook files — these remain on your device, or in your own Google Drive/iCloud account, at all times (except for the metadata fields you explicitly choose to share via Shared Shelves, per Section 4).</li>
+</ul>
+
+<h2>7. Data deletion</h2>
+<p>You can delete your data at any time in one or more of these ways:</p>
+<ul>
+  <li>Delete individual books, or use "Clear Data" in Settings to wipe your library locally, in your connected cloud account, or both — see <a href="delete-data.html">Delete Your Data</a> for the full steps.</li>
+  <li>Revoke Drive access from your Google Account permissions page (the hidden appDataFolder copy is deleted by Google when access is revoked or the App is uninstalled), or delete your iCloud backup from Settings within the App.</li>
+  <li>Request deletion of your account record — your email, name, and account identifier — from our Supabase-based account system, per <a href="delete-account.html">Delete Your Account</a>.</li>
+  <li>Uninstall the App, which removes all locally stored data from your device.</li>
+</ul>
+
+<h2>8. Children's privacy</h2>
+<p>Volara Shelf is a general-purpose ebook library tool and is not directed at children. We do not knowingly collect data from children under 13 (or the relevant minimum age in your jurisdiction).</p>
+
+<h2>9. Security</h2>
+<p>We rely on your device's own operating system security and your Google/Apple account security (for sign-in, Drive, and iCloud) to protect your data. No method of storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>We may update this policy as the App evolves. Material changes will be reflected by updating the "Last updated" date above. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about this policy or your data can be sent to <a href="mailto:volaralab@gmail.com">volaralab@gmail.com</a>.</p>
+
+</body>
+</html>

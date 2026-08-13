@@ -1,47 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Volara Log</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 640px; margin: 0 auto; padding: 60px 20px; line-height: 1.6; color: #1a1a1a; text-align: center; }
-  h1 { font-size: 28px; color: #0E2E5F; margin-bottom: 8px; }
-  .tagline { color: #666; font-size: 16px; margin-bottom: 40px; }
-  .card { background: #f7f8fa; border-radius: 12px; padding: 24px; text-align: left; margin-bottom: 20px; }
-  .card h2 { font-size: 16px; margin-top: 0; }
-  .card p { font-size: 14px; color: #444; margin-bottom: 0; }
-  .links { margin-top: 40px; font-size: 14px; }
-  .links a { color: #0077b6; margin: 0 12px; }
-  .contact { margin-top: 40px; font-size: 13px; color: #888; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volara Log - Professional Flight Logbook for Pilots</title>
+  <meta name="description" content="Log smarter, fly more with Volara Log. The professional flight logbook for commercial pilots featuring auto reports import and regulatory limits.">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<h1>Volara Log</h1>
-<p class="tagline">A professional flight logbook for pilots</p>
+  <div class="bg-pattern"></div>
 
-<div class="card">
-  <h2>What it does</h2>
-  <p>Volara Log is a personal flight logbook app for licensed and student pilots. It helps you record flight, duty, and simulator time, track regulatory limits and currencies, and export your logbook in EASA, GCAA, FAA/Jeppesen, or UK CAA format. Your data stays on your device, with an optional sync to your own Google Drive so you can back it up or use the app across multiple devices.</p>
-</div>
+  <div class="container">
+    <!-- Navigation -->
+    <nav>
+      <a href="../index.html" class="logo-container">
+        <img src="../assets/volara_lab_logo.png" alt="Volara Lab Logo" class="logo-img">
+        <span class="logo-text">&larr; Volara Lab</span>
+      </a>
+      <div class="contact-email">
+        <a href="mailto:volaralab@gmail.com">Support</a>
+      </div>
+    </nav>
 
-<div class="card">
-  <h2>Who makes it</h2>
-  <p>Volara Log is developed by Volara Lab.</p>
-</div>
+    <!-- Split Showcase Header (As requested) -->
+    <section class="showcase-split">
+      <div class="showcase-info">
+        <div class="showcase-header">
+          <img src="../assets/volara-log/logo.png" alt="Volara Log" style="width: 44px; height: 44px; border-radius: 9px; border: 1px solid var(--border-color);">
+          <div class="showcase-header-text">
+            <h2>Volara Log</h2>
+            <p>Your flight logbook, simplified.</p>
+          </div>
+        </div>
+        
+        <h1 class="showcase-title">Log smarter.<br><span>Fly more.</span></h1>
 
-<div class="links">
-  <a href="privacy-policy.html">Privacy Policy</a>
-  <a href="terms-of-service.html">Terms of Service</a>
-  <a href="delete-account.html">Delete Your Account</a>
-  <a href="delete-data.html">Delete Your Data</a>
-</div>
+        <!-- Feature List with mini icons -->
+        <div class="showcase-features">
+          <div class="showcase-feat-item">
+            <div class="showcase-feat-icon">⏱️</div>
+            <h4>Easy Logging</h4>
+            <p>Automatic OOOI time calculations and roster file imports.</p>
+          </div>
+          <div class="showcase-feat-item">
+            <div class="showcase-feat-icon">📊</div>
+            <h4>Powerful Insights</h4>
+            <p>Track flight time, duty limitations, simulator sessions, currencies, documents, and more.</p>
+          </div>
+          <div class="showcase-feat-item">
+            <div class="showcase-feat-icon">☁️</div>
+            <h4>Secure Backup</h4>
+            <p>Automatic background syncing to your preferred cloud service.</p>
+          </div>
+          <div class="showcase-feat-item">
+            <div class="showcase-feat-icon">📱</div>
+            <h4>Sync Across Devices</h4>
+            <p>Access your logbook seamlessly across all your devices.</p>
+          </div>
+        </div>
 
-<div class="contact">
-  Contact: <a href="mailto:volaralab@gmail.com">volaralab@gmail.com</a>
-</div>
+        <!-- Download Section with Official Badges -->
+        <div>
+          <h3 class="download-title">Download Now</h3>
+          <div class="badges-container">
+            <!-- App Store -->
+            <a href="https://apps.apple.com/co/app/volara-log/id6789135719" class="badge-link" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" style="height: 40px; width: auto; display: block;">
+            </a>
+
+            <!-- Google Play -->
+            <a href="https://play.google.com/store/apps/details?id=com.volaralog.app" class="badge-link" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 40px; width: auto; display: block;">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: 3D-angled iPhone & Android mockups using real screenshots -->
+      <div class="mockups-container">
+        <!-- iOS Mockup (Using iPhone statusbar notch and Flights list screenshot) -->
+        <div class="phone-mockup phone-ios">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="../assets/volara-log/screenshot1.png" alt="iOS Flights List">
+          </div>
+        </div>
+
+        <!-- Android Mockup (Using Android Screenshot of Dashboard) -->
+        <div class="phone-mockup phone-android">
+          <div class="phone-notch" style="width: 10px; height: 10px; border-radius: 50%; top: 4px;"></div>
+          <div class="phone-screen">
+            <img src="../assets/volara-log/android_screenshot2.png" alt="Android Dashboard">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Showcase Bar -->
+    <div class="showcase-footer">
+      <div class="showcase-footer-item">
+        <span>🛡️</span> Your data, always yours. Secure. Private. Synced.
+      </div>
+    </div>
+
+    <!-- Technical Details & Legal Policies -->
+    <section class="detail-info-block">
+      <div class="detail-info-grid">
+        <!-- Main body text -->
+        <div class="detail-main-text">
+          <h3>Import your flying history in minutes</h3>
+          <p>Import your airline's Flight Time Report files — every flight is logged automatically with no manual entry required. Sync your roster straight from your personal calendar, or import a CSV export from another logbook app. Only the data that matches a real Volara Log field gets imported — nothing forced into the wrong place.</p>
+
+          <h3>Built for real airline operations</h3>
+          <p>Full OOOI time tracking (Out/Off/On/In) with automatic block, flight, and night time calculations. Simulator sessions, duty periods, and flight duty period (FDP) tracking — all in one place. Multi-crew logging: PIC, SIC, instructor, and augmenting crew.</p>
+
+          <h3>Regulatory limits, tracked automatically</h3>
+          <p>Real-time currency and limit tracking (landings, block hours, duty periods) with expiry alerts. Generate compliant PDF logbook exports formatted for major aviation authorities worldwide.</p>
+
+          <h3>Your data, your control</h3>
+          <p>Automatic backup and sync to your preferred cloud service — access your logbook from any device. Works fully offline; sync happens whenever you're connected. Nothing shared with third parties.</p>
+        </div>
+
+        <!-- Sidebar documentation -->
+        <div class="detail-sidebar">
+          <div class="detail-sidebar-box">
+            <h4>Legal Documents</h4>
+            <ul class="legal-links-list">
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-of-service.html">Terms of Service</a></li>
+              <li><a href="delete-account.html">Delete Your Account</a></li>
+              <li><a href="delete-data.html">Delete Your Data</a></li>
+            </ul>
+          </div>
+          
+          <div class="detail-sidebar-box">
+            <h4>Support</h4>
+            <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 15px;">Need help importing your airline reports or have questions about regulations?</p>
+            <a href="mailto:volaralab@gmail.com" class="learn-more-link">Email Support &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="copyright">&copy; 2026 Volara Lab. All rights reserved.</p>
+    </footer>
+  </div>
 
 </body>
 </html>
- 

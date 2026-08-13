@@ -1,39 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Volara Lab</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 640px; margin: 0 auto; padding: 60px 20px; line-height: 1.6; color: #1a1a1a; text-align: center; }
-  h1 { font-size: 30px; color: #0E2E5F; margin-bottom: 8px; }
-  .tagline { color: #666; font-size: 16px; margin-bottom: 48px; }
-  .app-card { display: block; background: #f7f8fa; border-radius: 12px; padding: 24px; text-align: left; margin-bottom: 20px; text-decoration: none; color: inherit; transition: background 0.15s; }
-  .app-card:hover { background: #eef0f4; }
-  .app-card h2 { font-size: 18px; margin: 0 0 4px 0; color: #0E2E5F; }
-  .app-card p { font-size: 14px; color: #444; margin: 0; }
-  .contact { margin-top: 48px; font-size: 13px; color: #888; }
-  .contact a { color: #0077b6; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volara Lab - Simple, Private & Independent Apps</title>
+  <meta name="description" content="We build focused, local-first mobile apps like Volara Log and Booknest. Completely private by design. Your data remains yours.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Volara Lab</h1>
-<p class="tagline">Independent apps, built to actually work.</p>
+  <div class="bg-pattern"></div>
 
-<a class="app-card" href="volara-log/">
-  <h2>Volara Log</h2>
-  <p>A professional flight logbook for pilots — flight, duty, and simulator time, regulatory currencies, and EASA/GCAA/FAA/UK CAA exports.</p>
-</a>
+  <div class="container">
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html" class="logo-container">
+        <span class="logo-text">Volara Lab</span>
+      </a>
+      <div class="contact-email">
+        <a href="mailto:volaralab@gmail.com">Support</a>
+      </div>
+    </nav>
 
-<a class="app-card" href="booknest/">
-  <h2>Booknest</h2>
-  <p>An ebook library manager for EPUB, PDF, and more — your files backed up to your own Google Drive or iCloud, never to us.</p>
-</a>
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="hero-brand">
+        <img src="assets/volara_lab_logo.png" alt="Volara Lab Logo" class="hero-logo">
+        <span class="hero-brand-name">Volara Lab</span>
+      </div>
+      <p class="hero-subtitle">Functional. Simple. Tailored to you.</p>
+      <p class="tagline">We craft high-performance mobile applications focused on functionality, simplicity, and deep customization. Take complete control over your application settings and decide exactly how your data is managed.</p>
+    </header>
 
-<div class="contact">
-  Contact: <a href="mailto:volaralab@gmail.com">volaralab@gmail.com</a>
-</div>
+    <!-- Apps Grid -->
+    <main class="apps-grid">
+      <!-- Card: Volara Log -->
+      <a href="volara-log/index.html" class="app-card" id="card-volara-log">
+        <div>
+          <img src="assets/volara-log/logo.png" alt="Volara Log Logo" class="app-logo">
+          <h2 class="app-card-title">Volara Log</h2>
+          <p class="app-card-desc">A professional flight logbook for commercial pilots. Track block, flight, and simulator times, monitor regulatory currencies, and export compliant logs formatted for major aviation authorities worldwide.</p>
+        </div>
+        <span class="learn-more-link">View Details &amp; Downloads &rarr;</span>
+      </a>
+
+      <!-- Card: Booknest -->
+      <a href="booknest/index.html" class="app-card" id="card-booknest">
+        <div>
+          <div class="app-emoji-placeholder">
+            📚
+          </div>
+          <h2 class="app-card-title">Booknest</h2>
+          <p class="app-card-desc">Your ebook library manager, organized and backed up. Manage EPUB and PDF catalogs with seamless automatic backups directly to your own Google Drive or iCloud storage.</p>
+        </div>
+        <span class="learn-more-link">Privacy &amp; Terms &rarr;</span>
+      </a>
+    </main>
+
+    <!-- Values Section -->
+    <section class="features-section">
+      <h2>Our Principles</h2>
+      <div class="features-grid">
+        <div class="feature-col">
+          <h3>Absolute Privacy</h3>
+          <p>Your files and personal data remain locally on your device or in your own cloud storage. We never collect, see, or store your information.</p>
+        </div>
+        <div class="feature-col">
+          <h3>Professional Utility</h3>
+          <p>Crafted to be reliable, robust, and highly accurate. We build our software with strict adherence to official formulas, industry standards, and clean data specifications.</p>
+        </div>
+        <div class="feature-col">
+          <h3>Zero Distractions</h3>
+          <p>No advertisements, no background trackers, and no complex subscriptions. Just clean, optimized applications designed to load instantly and get the job done.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="contact-email">Questions or feedback? Reach out to <a href="mailto:volaralab@gmail.com">volaralab@gmail.com</a></p>
+      <p class="copyright">&copy; 2026 Volara Lab. All rights reserved.</p>
+    </footer>
+  </div>
 
 </body>
 </html>

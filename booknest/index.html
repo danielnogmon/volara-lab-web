@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Booknest</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 640px; margin: 0 auto; padding: 60px 20px; line-height: 1.6; color: #1a1a1a; text-align: center; }
-  h1 { font-size: 28px; color: #0E2E5F; margin-bottom: 8px; }
-  .tagline { color: #666; font-size: 16px; margin-bottom: 40px; }
-  .card { background: #f7f8fa; border-radius: 12px; padding: 24px; text-align: left; margin-bottom: 20px; }
-  .card h2 { font-size: 16px; margin-top: 0; }
-  .card p { font-size: 14px; color: #444; margin-bottom: 0; }
-  .links { margin-top: 40px; font-size: 14px; }
-  .links a { color: #0077b6; margin: 0 12px; }
-  .contact { margin-top: 40px; font-size: 13px; color: #888; }
-  .back { margin-bottom: 32px; font-size: 13px; }
-  .back a { color: #888; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booknest - Ebook Library Manager</title>
+  <meta name="description" content="Discover Booknest: the local-first ebook library manager with automatic iCloud and Google Drive backups. Privacy first.">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<div class="back"><a href="../">&larr; Volara Lab</a></div>
+  <div class="bg-pattern"></div>
 
-<h1>Booknest</h1>
-<p class="tagline">Your ebook library, organized and backed up</p>
+  <div class="container">
+    <!-- Navigation -->
+    <nav>
+      <a href="../index.html" class="logo-container">
+        <img src="../assets/volara_lab_logo.png" alt="Volara Lab Logo" class="logo-img">
+        <span class="logo-text">&larr; Volara Lab</span>
+      </a>
+      <div class="contact-email">
+        <a href="mailto:volaralab@gmail.com">Support</a>
+      </div>
+    </nav>
 
-<div class="card">
-  <h2>What it does</h2>
-  <p>Booknest is a personal ebook library manager for EPUB, PDF, TXT, FB2, and CBZ files (with more formats planned). It helps you organize your existing ebook collection, fetch cover art and metadata, and read on your device. Your files stay on your device by default, with an optional backup to your own Google Drive or iCloud account, so you never lose your library and can free up space on your device without losing access to it.</p>
-</div>
+    <!-- App Detail Header -->
+    <header class="app-detail-header">
+      <div class="app-emoji-placeholder" style="margin: 0 auto 24px auto; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; font-size: 28px;">
+        📚
+      </div>
+      <h1>Booknest</h1>
+      <p class="app-detail-tagline">Your ebook library manager, organized and backed up. Designed for EPUB, PDF, and various ebook formats with local-first file control.</p>
+    </header>
 
-<div class="card">
-  <h2>Who makes it</h2>
-  <p>Booknest is developed by Volara Lab.</p>
-</div>
+    <!-- Detailed Information Section -->
+    <section class="info-section">
+      <!-- Main Content -->
+      <div class="info-body">
+        <h3>What is Booknest?</h3>
+        <p>Booknest is a personal ebook library manager for EPUB, PDF, TXT, FB2, and CBZ files (with more formats planned). It helps you organize your existing ebook collection, fetch cover art and metadata, and read comfortably on your device.</p>
 
-<div class="links">
-  <a href="privacy-policy.html">Privacy Policy</a>
-  <a href="terms-of-service.html">Terms of Service</a>
-  <a href="delete-account.html">Delete Your Account</a>
-  <a href="delete-data.html">Delete Your Data</a>
-</div>
+        <h3>Your files, your library</h3>
+        <p>Your ebook files and reading history stay on your device by default. We do not host your library, track your reading metrics, or sell your analytics to third-party databases.</p>
 
-<div class="contact">
-  Contact: <a href="mailto:volaralab@gmail.com">volaralab@gmail.com</a>
-</div>
+        <h3>Backup to your own cloud storage</h3>
+        <p>Booknest offers optional backup syncing directly to your own Google Drive or iCloud account. This lets you free up space on your device without losing access to your ebooks, and keeps your collection synced across multiple devices.</p>
+
+        <h3>Built by Volara Lab</h3>
+        <p>Booknest is created with a commitment to utility, performance, and user privacy.</p>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="info-sidebar">
+        <div class="sidebar-box">
+          <h4>Legal Documents</h4>
+          <ul class="legal-links-list">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="delete-account.html">Delete Your Account</a></li>
+            <li><a href="delete-data.html">Delete Your Data</a></li>
+          </ul>
+        </div>
+        
+        <div class="sidebar-box">
+          <h4>Support</h4>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 15px;">Have suggestions or feedback regarding Booknest's features?</p>
+          <a href="mailto:volaralab@gmail.com" class="learn-more-link">Email Support &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="copyright">&copy; 2026 Volara Lab. All rights reserved.</p>
+    </footer>
+  </div>
 
 </body>
 </html>

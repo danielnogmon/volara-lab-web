@@ -34,11 +34,12 @@ assets/              Images used by the site (logos, screenshots), one
 <app>/delete-data.html      (same)
 ```
 
-Currently `volara-log/` and `booknest/` exist as subfolders. **Only Volara
+Currently `volara-log/`, `booknest/`, and `wall-survivor/` exist as subfolders. **Only Volara
 Log is finished and published** (App Store + Play). Booknest and
 `fdp-tracker` are still in design — no real logos or screenshots for them
 yet (Booknest's card/page currently uses a 📚 emoji placeholder in place of
-a logo asset). Don't invent visual identity for an unpublished app; ask
+a logo asset). Wall Survivor is in development and uses a 🧱 emoji placeholder.
+Don't invent visual identity for an unpublished app; ask
 Daniel or wait for real assets rather than guessing at colors/logo/screenshots.
 
 ## Working conventions
@@ -74,5 +75,6 @@ Known gaps to close before this is publish-ready:
 - No favicon declared anywhere on the site.
 - Booknest has no real logo asset (`assets/` has no `booknest/` subfolder
   yet) — uses a 📚 emoji placeholder instead.
+- Wall Survivor has no real logo asset — uses a 🧱 emoji placeholder instead.
 - `assets/volara-log/android_screenshot1.png`, `screenshot2.png`,
   `screenshot3.png` exist but aren't referenced by any page yet.

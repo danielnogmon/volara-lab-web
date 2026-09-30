@@ -11,9 +11,9 @@ pages + legal pages), so the old name undersold it.
 
 **This repo is web-only — app code and store-submission assets live
 elsewhere.** Sibling repos in `../` (the `Volara Lab/` parent directory):
-- `../volara-log/`, `../booknest/`, `../fdp-tracker/` — each app's own
+- `../Log Nest/`, `../Booknest/`, (FDP Tracker eliminado) — each app's own
   Flutter code. Not touched from here.
-- `../branding/` — App Store/Play Store submission assets (screenshots,
+- `Google Drive/My Drive/Volara Lab/Branding/` — App Store/Play Store submission assets (screenshots,
   icons, feature graphics) per app. Not served on the web; separate concern
   from this repo's `assets/`.
 
@@ -44,7 +44,7 @@ Daniel or wait for real assets rather than guessing at colors/logo/screenshots.
 
 ## Working conventions
 
-Same standing rules as `../volara-log/` — this project follows the same
+Same standing rules as `../Log Nest/` — this project follows the same
 conventions, not a separate set:
 
 - **Commit locally as work completes; don't push speculatively mid-session.

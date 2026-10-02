@@ -16,15 +16,16 @@
 <body>
 
 <h1>Privacy Policy — Ion Siege</h1>
-<p class="updated">Last updated: September 28, 2026</p>
+<p class="updated">Last updated: October 2, 2026</p>
 
 <p>Ion Siege ("the App", "we", "us") is a roguelite idle tower defense game, developed by Volara Lab. This Privacy Policy explains what data the App handles, how it is stored, and what control you have over it.</p>
 
 <h2>1. Account — guest by default</h2>
 <p>The App creates a guest (anonymous) account for you automatically the first time you play, so your progress can sync to our server and, if you choose, to other devices. A guest account holds no personal information beyond an internal account identifier. You can optionally link an e-mail address and password, or sign in with Google or Apple, to make sure you can recover your progress on another device — see Section 2. You are never required to give us your real name.</p>
 
-<h2>2. Sign-in with Google or Apple (optional)</h2>
+<h2>2. Sign-in with Google or Apple, Game Center and Google Play Games (optional)</h2>
 <p>If you choose to link your guest account to Google or Apple instead of an e-mail and password, the App receives only what those providers share for sign-in purposes — typically your account identifier and, if you allow it, your e-mail address — through Firebase Authentication (operated by Google; see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>). We do not receive your Google or Apple password, and we do not post to those accounts or access any other data on them.</p>
+<p>On iPhone/iPad the App can also connect your Game Center profile, and on Android your Google Play Games profile, to your account so that your progress can be restored automatically on a new device. For this we receive and store the identifier of that profile (not your password, friends list or other game data) and link it to your account identifier.</p>
 
 <h2>3. Game data stored on our server</h2>
 <p>The App is built on Firebase (operated by Google) and Cloud Functions we control. Your device never talks to our database directly — every request goes through our own server code, which stores:</p>
@@ -33,19 +34,21 @@
   <li><strong>Your cloud save</strong> — your run progress, unlocked Towers/Modules/Talents, and similar in-game state, so you can continue on another device.</li>
   <li><strong>Your Endless-mode leaderboard entry</strong> (best wave reached per Sector), shown publicly under a generated display name like "Commander-XXXX" — never your real name or e-mail.</li>
   <li><strong>A record of your in-app purchases</strong> (product bought, store, amount, transaction id) tied to your account, used to credit the right rewards and to prevent fraud.</li>
+  <li><strong>Your display name</strong> — generated automatically, or one you choose in the App. It is shown on the Endless leaderboard, so please do not use your real name.</li>
+  <li><strong>Gameplay and performance data</strong> — how your runs go (Sector, waves reached, upgrades bought, damage dealt and taken) and how the game performs on your device (frame rate, device model, operating system version, graphics chip, screen size). It is tied to your account identifier, not to your name or e-mail, and we use it to balance difficulty and rewards and to fix performance problems. You can stop this upload at any time with the switch "Share anonymous gameplay data" in Settings.</li>
 </ul>
-<p>We also use Firebase Analytics, and may use Firebase Crashlytics, to understand gameplay patterns and diagnose crashes — this data is tied to an anonymous installation identifier, not your name or e-mail.</p>
+<p>We also use Firebase Analytics and Firebase Crashlytics (operated by Google) to understand how the game is used and to diagnose crashes. This data is tied to your account identifier, not to your name or e-mail; crash reports also include your device model and operating system version. The Settings switch above stops the gameplay data described in the list, but not Analytics or crash reports.</p>
 
 <h2>4. In-app purchases</h2>
 <p>Purchases are processed by Google Play or the App Store, and by <a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat</a>, the subscription/purchase platform we use to manage entitlements across both stores. RevenueCat receives your purchase events from the store and forwards a confirmation to our server so we can credit your Gems or unlock what you bought — RevenueCat does not receive your library, save data, or Gems balance. We never see or store your payment card details; those are handled entirely by Google Play or the App Store.</p>
 
 <h2>5. Ads</h2>
-<p>The App may show optional rewarded video ads (for example, to refill Energy or double a reward) through Google AdMob. These ads are only ever shown when you choose to watch one — the App does not show interstitial or forced ads. AdMob may use an advertising identifier to serve and measure ads, governed by <a href="https://policies.google.com/technologies/ads" target="_blank">Google's advertising policies</a>. Where required by local law, you'll be asked for consent before any personalized ad is shown.</p>
+<p>The App may show optional rewarded video ads (for example, to refill Energy or double a reward) through Google AdMob. These ads are only ever shown when you choose to watch one — the App does not show interstitial or forced ads. To serve and measure ads, AdMob may collect device identifiers (such as an advertising identifier), information about how you interact with ads, and your approximate location derived from your IP address, governed by <a href="https://policies.google.com/technologies/ads" target="_blank">Google's advertising policies</a>. Where required by local law, you'll be asked for consent before any personalized ad is shown.</p>
 
 <h2>6. What we do not do</h2>
 <ul>
   <li>We do not sell your data to any third party.</li>
-  <li>We do not ask for or store your real name, unless you choose to type one into a future in-app profile field.</li>
+  <li>We do not ask for or store your real name. The display name you may choose in the App is public on the leaderboard, so choose one that is not your real name.</li>
   <li>We do not access your contacts, photos, or other apps on your device.</li>
 </ul>
 
